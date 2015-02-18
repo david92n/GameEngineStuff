@@ -5,6 +5,7 @@
 #include "Shader.h"
 #include "Mesh.h"
 #include "Texture.h"
+#include "Transform.h"
 
 int main()
 {
@@ -23,6 +24,8 @@ int main()
 
 	Mesh mesh(verticies, sizeof(verticies) / sizeof(verticies[0]));
 
+	Transform transform;
+
 	auto startTime = std::chrono::high_resolution_clock::now();
 
 	while (display.IsRunning())
@@ -31,9 +34,8 @@ int main()
 		std::chrono::duration<float> time = currentTime - startTime;
 
 		display.Clear(0.0f, 0.0f, 0.0f, 1.0f);
-
 		shader.Bind();
-		shader.UpdateUniforms(time.count());
+		shader.Update(transform, time.count());
 		texture.Bind(0);
 		mesh.Draw();
 
