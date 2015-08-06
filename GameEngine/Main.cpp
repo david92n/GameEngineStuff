@@ -1,11 +1,11 @@
 #include <chrono>
 #include <iostream>
 #include <GL/glew.h>
-#include "Display.h"
-#include "Shader.h"
-#include "Mesh.h"
-#include "Texture.h"
-#include "Transform.h"
+#include "display.h"
+#include "shader.h"
+#include "mesh.h"
+#include "texture.h"
+#include "transform.h"
 
 int main()
 {

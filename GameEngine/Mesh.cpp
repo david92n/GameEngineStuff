@@ -1,4 +1,4 @@
-#include "Mesh.h"
+#include "mesh.h"
 #include <vector>
 
 Mesh::Mesh(Vertex* verticies, unsigned int numVerticies)

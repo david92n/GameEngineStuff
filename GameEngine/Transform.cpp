@@ -1,4 +1,4 @@
-#include "Transform.h"
+#include "transform.h"
 #include <glm/gtx/transform.hpp>
 
 Transform::Transform(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& scale)

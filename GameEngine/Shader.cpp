@@ -1,5 +1,5 @@
-#include "Shader.h"
-#include "Transform.h"
+#include "shader.h"
+#include "transform.h"
 #include <fstream>
 #include <iostream>
 
